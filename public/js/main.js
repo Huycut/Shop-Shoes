@@ -563,3 +563,19 @@ $(document).ready(function(){
   
 
  });
+ const listItemElements = document.querySelectorAll('li.nav-item');
+ const currentUrl = window.location.href;//lấy url
+ const startIndex = currentUrl.lastIndexOf("/") + 1;// lấy chuỗi sau dấu / của url 
+ const url = currentUrl.substring(startIndex);
+ var arUrl = {
+    'home' : '',
+    'Category' : 'san-pham',
+    'login' : 'login'
+ };
+ var number = 0;
+ for(let key in arUrl){
+  if(arUrl[key]===url){
+    listItemElements[number].classList.add('active');
+  }
+  number++;
+}

@@ -20,9 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     // Xử lý thành công
                     console.log(response.message);
                     location.reload();
-                    // Cập nhật giao diện hoặc thực hiện các thao tác khác
                 } else {
-                    // Không tìm thấy sản phẩm để xóa
                     console.log(response.message);
                 }
                 // Xử lý thành công

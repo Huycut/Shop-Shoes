@@ -14,25 +14,23 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="/">Trang chủ</a></li>
+							<li class="nav-item "><a class="nav-link" href="/">Trang chủ</a></li>
 							<li class="nav-item submenu dropdown">
-								<a href="/san-pham" class="nav-link dropdown-toggle">Sản phẩm</a>
-								
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-									<li class="nav-item"><a class="nav-link" href="tracking.html">Tracking</a></li>
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-								</ul>
+								<a href="/san-pham" class="nav-link ">Sản phẩm</a>
 							</li>
 							<!-- <li class="nav-item"><a class="nav-link" href="/buyer/login">Đăng Nhập</a></li> -->
 							<?php
-								if (isset($_SESSION['name'])){
-									
-									echo '<span>'.$_SESSION['name'].'</span>';
+								$session = \Config\Services::session();
+								$name = $session->get('name');
+						
+								if ($name){
+									echo  '<li class="nav-item submenu dropdown">
+												<span class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+												aria-expanded="false">'.$name.'</span>
+												<ul class="dropdown-menu">
+													<li class="nav-item"><a class="nav-link" href="blog.html">Đăng Xuất</a></li>
+												</ul>
+											</li>';	
 								}
 								else{
 									echo '<li class="nav-item"><a class="nav-link" href="/buyer/login">Đăng Nhập</a></li>';

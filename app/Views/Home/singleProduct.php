@@ -72,7 +72,7 @@
 							<p><?=$key->title?></p>
 							<form method="post" action="/addCart">
 								<div class="product_count">
-									<label for="qty">Quantity:</label>
+									<label for="qty">số lượng:</label>
 									<input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
 									<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
 									class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
@@ -81,7 +81,7 @@
 								</div>
 								<div class="card_area d-flex align-items-center">
 									<input type="hidden" name="idProduct" value="<?=$key->idProduct?>">
-									<button class="primary-btn" type="submit" >Add to Cart</span>
+									<button class="primary-btn" type="submit" >Thêm vào giỏ hàng</span>
 								</div>
 							</form>
 						</div>
