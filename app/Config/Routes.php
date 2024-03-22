@@ -19,7 +19,7 @@ $routes->group('buyer',function(RouteCollection $routes){
     $routes->post('login_process','Buyer::login_process');
     $routes->get('register','Buyer::register');
     $routes->post('registration','Buyer::registration');
-
+    $routes->get('logout','Buyer::logout');
 });
 // $routes->get('/', 'Home::index');
 // $routes->get('/san-pham','Category::index');

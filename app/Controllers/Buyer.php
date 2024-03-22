@@ -40,4 +40,11 @@ class Buyer extends BaseController
             return $this->response->redirect('login');
         }
     }
+    public function logout(){
+        $session = \Config\Services::session();
+        if($session->has('name')){
+            $session->remove('name');
+        }
+        return redirect()->back();
+    }
 }

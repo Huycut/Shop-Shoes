@@ -8,7 +8,6 @@ class Home extends BaseController
     {
 
          $data=[];
-
         session()->has('name'); 
         $data= $this->loadLayout($data);    
         return view('Home/index',$data);

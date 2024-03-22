@@ -28,7 +28,7 @@
 												<span class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 												aria-expanded="false">'.$name.'</span>
 												<ul class="dropdown-menu">
-													<li class="nav-item"><a class="nav-link" href="blog.html">Đăng Xuất</a></li>
+													<li class="nav-item"><a class="nav-link" href="'.base_url('buyer/logout').'">Đăng Xuất</a></li>
 												</ul>
 											</li>';	
 								}
