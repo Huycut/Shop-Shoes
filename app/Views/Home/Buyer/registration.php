@@ -46,14 +46,14 @@
 					<div class="login_box_img">
 						<img class="img-fluid" src="img/login.jpg" alt="">
 						<div class="hover">
-							<h4>Bạn mới sử dụng trang web của chúng tôi?</h4>
-							<a class="primary-btn" href="registration.html">Tạo tài khoản mới</a>
+							<h4>Quay lại trang đăng nhập</h4>
+							<a class="primary-btn" href="login">Quay lại</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="login_form_inner">
-						<h3>Đăng nhập</h3>
+						<h3>Đăng ký</h3>
 						<form class="row login_form" action="registration" method="post" id="contactForm" novalidate="novalidate">
 							<div class="col-md-12 form-group">
 								<input type="email" class="form-control" id="email" name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" >
